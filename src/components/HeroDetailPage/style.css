@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/* @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css); */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #5c7fb8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.movie-card {
+  font: 14px/22px "Lato", Arial, sans-serif;
+  /* color: #a9a8a3; */
+  /* padding: 40px 0; */
+}
+
+.container {
+  margin: 0 auto;
+  width: auto;
+  height: 100%;
+  background: #f9fcff;
+  /* border-radius: 5px; */
+  position: relative;
+}
+
+.hero {
+  height: 453px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
+}
+
+.hero:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  /* background: red; */
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)),
+    url("../../assets/images/avatar_poster.jpg");
+  /* opacity: 0.6; */
+  z-index: -1;
+  /* transform: skewY(-2.2deg);
+  transform-origin: 0 0; */
+  -webkit-backface-visibility: hidden;
+}
+
+.cover {
+  z-index: 1000;
+  /* border-radius: 13px; */
+  min-width: 246px;
+  height: 364px;
+  /* background-image: url("../../assets/images/avatar_card.jpg"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.details {
+  padding: 190px 0 0 280px;
+}
+.details .title1 {
+  color: white;
+  font-size: 44px;
+  margin-bottom: 13px;
+  position: relative;
+}
+.details .title1 span {
+  position: absolute;
+  top: 3px;
+  margin-left: 12px;
+  background: #c4af3d;
+  border-radius: 5px;
+  color: #544c21;
+  font-size: 14px;
+  padding: 0px 4px;
+}
+.details .title2 {
+  color: #c7c1ba;
+  font-size: 23px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.details .likes {
+  margin-left: 24px;
+}
+.details .likes:before {
+  content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png");
+  position: relative;
+  top: 2px;
+  padding-right: 7px;
+}
+
+.description {
+  /* bottom: 0px; */
+  height: 1723px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #b1b0ac;
+}
+
+.description2 {
+  /* bottom: 0px; */
+  margin-top: 50px;
+  height: auto;
+  font-size: 16px;
+  line-height: 26px;
+  /* color: #b1b0ac; */
+  background: #eff4f9;
+}
+
+.column1 {
+  padding-left: 50px;
+  padding-top: 150px;
+  width: 220px;
+  float: left;
+  text-align: center;
+}
+.column11 {
+  padding-left: 100px;
+  padding-top: 45px;
+
+  width: 220px;
+  float: left;
+  text-align: center;
+}
+
+.tag {
+  background: white;
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 14px;
+  margin-right: 4px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background: #ddd;
+}
+
+.column2 {
+  padding-left: 41px;
+  padding-top: 190px;
+  margin-left: 120px;
+  margin-right: 120px;
+  width: 480px;
+  float: left;
+}
+.column22 {
+  padding-left: 41px;
+  padding-top: 80px;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 50px;
+  width: 480px;
+  float: left;
+}
+
+.avatars {
+  margin-top: 23px;
+}
+.avatars img {
+  cursor: pointer;
+}
+.avatars img:hover {
+  opacity: 0.6;
+}
+.avatars a:hover {
+  text-decoration: none;
+}
+
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+}
+
+.ratings {
+  display: inline-block;
+  /* border-color: "black"; */
+  padding: 10px;
+  margin-top: 8rem;
+  width: 150px;
+  text-align: center;
+  /* border-color: red; */
+  /* background-color: transparent; */
+}
+
+.ratings-box {
+  float: right;
+  margin-right: 114px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  z-index: 1000;
+}
+
+.movie-title {
+  font-family: "Oskari G2 Medium";
+  font-weight: 400;
+  font-size: 70px;
+  /* display: inline; */
+  line-height: normal;
+  margin-top: 0.8em;
+  color: white;
+  /* display: block; */
+  margin-left: 7rem;
+}
+
+.movie-year {
+  font-family: "Oskari G2 Regular";
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.movie-directed {
+  font-family: "Oskari G2 Regular";
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: -3.5rem;
+  margin-left: 7rem;
+  display: block;
+  color: white;
+}
+.movie-rating {
+  font-family: "Oskari G2 Regular";
+  font-weight: 400;
+  font-size: 21px;
+  color: #ffbf49;
+  /* margin-top: 0px;
+  margin-left: 114px; */
+}
+.movie-imdb {
+  font-family: "Oskari G2 Regular";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffbf49;
+  /* margin-top: -35px;
+  margin-left: 114px; */
+}
+.movie-rating span {
+  font-size: 29px;
+  font-family: "Oskari G2 Medium";
+}
+
+.movie-plot {
+  font-size: 18px;
+  font-family: "Oskari G2 Regular";
+  opacity: 0.6;
+  font-weight: 400;
+  margin-left: -240px;
+  margin-top: 0px;
+}
+
+.movie-info {
+  font-size: 14px;
+  font-family: "Oskari G2 Regular";
+  opacity: 0.8;
+  margin-top: 1.5rem;
+  margin-left: 7rem;
+  display: block;
+  color: white;
+}
+
+.heading {
+  font-family: "Oskari G2 Medium";
+  font-size: 32px;
+  font-weight: 400;
+  color: #484e55;
+}
+
+.text {
+  font-family: "Oskari G2 Regular";
+  font-size: 16px;
+  font-weight: 400;
+  color: #484e55;
+}
+
+.detail-heading {
+  font-family: "Oskari G2 Regular";
+  font-weight: 400;
+  font-size: 16px;
+  color: #899eb0;
+}
+
+.detail-info {
+  font-family: "Oskari G2 Medium";
+  font-weight: 400;
+  font-size: 16px;
+  color: #484e55;
+}
+
+.container-explore {
+  margin-left: 7.5rem;
+  margin-top: 5rem;
+}

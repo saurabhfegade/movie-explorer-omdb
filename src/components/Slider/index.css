@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  background-color: #f9fcff !important;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slider {
+  height: 950px;
+}
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  height: 800px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  z-index: 100000;
+}
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 114px;
+  color: #000;
+  font-weight: 400;
+  font-size: 2em;
+  z-index: 100;
+  cursor: pointer;
+}
+.logo img {
+  height: 26px;
+  width: 111px;
+}
+
+.signUp1 {
+  position: fixed;
+  top: 10px;
+  right: 200px;
+  color: #fff;
+  z-index: 500;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.signUp2 {
+  position: fixed;
+  top: 10px;
+  right: 113px;
+  color: #fff;
+  z-index: 500;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.btnSignup {
+  width: 150px;
+  /* background-color: #5995fd; */
+  border: none;
+  outline: none;
+  height: 40px;
+  border-radius: 5px;
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+
+  /* padding-top: 0px !important; */
+}
+.btnSignup.transparent {
+  margin: 0;
+  background: none;
+  border: 2px solid var(--black);
+  width: 150px;
+  height: 49px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.btnSignup.transparent:hover {
+  background-color: var(--vermilion);
+}
+/* Navbar links */
+#navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  /* background-color: #ddd; */
+  /* color: black; */
+}
+
+.number-slide1 {
+  margin-top: -50px;
+
+  height: 100vh;
+  /* width: 1800px; */
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 1rem;
+  right: 7rem;
+}
+
+.dot {
+  border: none;
+  width: 50px;
+  height: 7px;
+  background: #ffffff;
+  opacity: 0.25;
+  border-radius: 0%;
+  margin: 0 5px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #ffffff;
+  opacity: 1;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 5px;
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.home-movie-title {
+  font-family: "Oskari G2 Medium";
+  font-weight: 400;
+  font-size: 84px;
+  display: inline;
+  margin-left: 114px;
+  /* margin-top: 200px; */
+}
+
+.home-movie-year {
+  font-family: "Oskari G2 Regular";
+  font-weight: 400;
+  font-size: 32px;
+  display: inline;
+}
+
+.home-movie-directed {
+  font-family: "Oskari G2 Regular";
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 0rem;
+  margin-left: 114px;
+}
+.home-movie-rating {
+  font-family: "Oskari G2 Regular";
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffbf49;
+  margin-top: 0rem;
+  margin-left: 114px;
+}
+.home-movie-imdb {
+  font-family: "Oskari G2 Regular";
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffbf49;
+  margin-top: -1rem;
+  margin-left: 114px;
+}
+.home-movie-rating span {
+  font-size: 42px;
+  font-family: "Oskari G2 Medium";
+}
+
+.home-movie-plot {
+  font-size: 18px;
+  font-family: "Oskari G2 Regular";
+  opacity: 1;
+  font-weight: 400;
+  margin-left: -21rem;
+  line-height: normal;
+  margin-top: 0px;
+}
+
+.home-movie-info {
+  font-size: 14px;
+  font-family: "Oskari G2 Regular";
+  opacity: 1;
+  margin-left: 7rem;
+}
+
+.container-header {
+  margin-top: 40rem;
+}
+
+.alice-carousel__dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 6rem;
+  /* background: #df2d2d; */
+  right: 8rem;
+}
+.alice-carousel__dots-item {
+  border: none !important;
+  width: 40px !important;
+  height: 5px !important;
+  background-color: #fff !important;
+  opacity: 0.25 !important;
+  border-radius: 0% !important;
+  margin: 0 5px !important;
+  padding: 3px !important;
+  cursor: pointer;
+}
+
+.alice-carousel__dots-item:focus {
+  outline: none;
+}
+
+.__active {
+  /* background: #ffffff; */
+  opacity: 1 !important;
+}

@@ -1,0 +1,19 @@
+.explore-text {
+  font-family: "Oskari G2 Medium";
+  font-size: 32px;
+  font-weight: 400;
+  color: #484e55;
+  text-align: center;
+}
+
+.search-container {
+  padding: 10px;
+}
+
+.loadingOuter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
